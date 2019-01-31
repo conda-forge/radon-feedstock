@@ -9,9 +9,9 @@ source:
   sha256: ef5b38ee6c9994032a4cb3de0f6689e0046024ae3ff3b16944d72a4dce99650e
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - radon = radon:main
 
@@ -37,7 +37,6 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: 'Code Metrics in Python'
-
   description: |
     Radon is a Python tool that computes various metrics from the source code. Radon can compute:
     
@@ -45,6 +44,7 @@ about:
     - raw metrics (these include SLOC, comment lines, blank lines, &c.)
     - Halstead metrics (all of them)
     - Maintainability Index (the one used in Visual Studio)
+  doc_url: https://radon.readthedocs.io
 
 extra:
   recipe-maintainers:
