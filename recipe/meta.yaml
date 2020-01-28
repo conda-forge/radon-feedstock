@@ -1,4 +1,4 @@
-{% set version = "3.0.2" %}
+{% set version = "4.1.0" %}
 
 package:
   name: radon
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/radon/radon-{{ version }}.tar.gz
-  sha256: b96ea58cc7ede3a1b957b4d83dd894006e6bb17daade2586773a035b5e131a55
+  sha256: 56082c52206db45027d4a73612e1b21663c4cc2be3760fee769d966fd7efdd6d
 
 build:
   number: 0
