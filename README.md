@@ -125,4 +125,5 @@ Feedstock Maintainers
 =====================
 
 * [@igortg](https://github.com/igortg/)
+* [@tonybaloney](https://github.com/tonybaloney/
 
