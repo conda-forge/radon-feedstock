@@ -5,7 +5,7 @@ Home: https://github.com/rubik/radon
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Code Metrics in Python
 

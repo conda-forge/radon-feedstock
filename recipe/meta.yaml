@@ -1,4 +1,4 @@
-{% set version = "4.1.0" %}
+{% set version = "4.2.0" %}
 
 package:
   name: radon
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/radon/radon-{{ version }}.tar.gz
-  sha256: 56082c52206db45027d4a73612e1b21663c4cc2be3760fee769d966fd7efdd6d
+  sha256: b73f6f469c15c9616e0f7ce12080a9ecdee9f2335bdbb5ccea1f2bae26e8d20d
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - radon = radon:main
 
@@ -36,10 +36,10 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Code Metrics in Python'
+  summary: Code Metrics in Python
   description: |
     Radon is a Python tool that computes various metrics from the source code. Radon can compute:
-    
+
     - McCabe’s complexity, i.e. cyclomatic complexity
     - raw metrics (these include SLOC, comment lines, blank lines, &c.)
     - Halstead metrics (all of them)
