@@ -24,8 +24,8 @@ requirements:
     - python
     - setuptools
   run:
-    - mando
-    - colorama >=0.3
+    - mando >=0.6,<0.7
+    - colorama >=0.4.1
     - flake8-polyfill
     - python
 
