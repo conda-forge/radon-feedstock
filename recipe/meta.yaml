@@ -9,7 +9,7 @@ source:
   sha256: cb1d8752e5f862fb9e20d82b5f758cbc4fb1237c92c9a66450ea0ea7bf29aeee
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -20,8 +20,8 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - mando
-    - colorama >=0.3
+    - mando >=0.6,<0.7
+    - colorama >=0.4.1
     - flake8-polyfill
     - python >=3.6
 
