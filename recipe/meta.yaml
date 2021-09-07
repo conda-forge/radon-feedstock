@@ -17,13 +17,13 @@ build:
 
 requirements:
   host:
-    - python >= 3.6
+    - python >=3.6
     - pip
   run:
     - mando
     - colorama >=0.3
     - flake8-polyfill
-    - python
+    - python >=3.6
 
 test:
   imports:
